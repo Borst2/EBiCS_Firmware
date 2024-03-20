@@ -62,7 +62,7 @@
 //#define DIRDET
 #define FRAC_HIGH 30
 #define FRAC_LOW 15
-#define PAS_TIMEOUT 3000
+#define PAS_TIMEOUT 3000 //8000=1s
 #define RAMP_END 1200
 
 //---------------------------------------------------------------------
@@ -74,9 +74,9 @@
 //--------------------------------------------------------------------
 //Speed settings
 #define WHEEL_CIRCUMFERENCE 2200
-#define GEAR_RATIO 11 //11 for BionX IGH3
+#define GEAR_RATIO 72 //4,83*30/2=72,45
 #define SPEEDLIMIT 25
-#define PULSES_PER_REVOLUTION 1
+#define PULSES_PER_REVOLUTION 1 //Anzahl Magnete Speedsensor
 #define SPEEDSOURCE INTERNAL
 #define SPEEDFILTER 1
 #define SPDSHFT 0
@@ -87,12 +87,12 @@
 #define BATTERYCURRENT_MAX 14000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
-#define VOLTAGE_MIN 1320 //33V
+#define VOLTAGE_MIN 1560 //33V = 1320 ; 13s ->39V
 
 //---------------------------------------------------------------------
 //torquesensor settings
 #define TS_COEF 2400
-#define TS_MODE
+//#define TS_MODE //TQ Sensor
 //#define TQONAD1
 
 //---------------------------------------------------------------------

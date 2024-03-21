@@ -73,7 +73,7 @@
 
 //--------------------------------------------------------------------
 //Speed settings
-#define WHEEL_CIRCUMFERENCE 2200
+#define WHEEL_CIRCUMFERENCE 2215 //28Zoll
 #define GEAR_RATIO 72 //4,83*30/2=72,45
 #define SPEEDLIMIT 25
 #define PULSES_PER_REVOLUTION 1 //Anzahl Magnete Speedsensor

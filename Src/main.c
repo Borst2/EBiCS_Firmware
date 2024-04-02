@@ -1009,8 +1009,8 @@ printf_("adcData[6],MS.i_q_setpoint, MS.Speed, uint32_PAS, adcData[0], int32_tem
 #if (DISPLAY_TYPE == DISPLAY_TYPE_DEBUG && !defined(FAST_LOOP_LOG))
 		  //print values for debugging
 
-
-		  sprintf_(buffer, "%d, %d, %d, %d, %d, %d, %d, %d, %d\r\n", adcData[6],MS.i_q_setpoint, MS.Speed, uint32_PAS, adcData[0], int32_temp_current_target , MS.i_q, uint16_idle_run_counter, MS.system_state);
+			sprintf_(buffer, "%d, %d, %d, %d, %d, %d, %d, %d, %d\r\n", adcData[6],HAL_GPIO_ReadPin(PAS_GPIO_Port, PAS_Pin),HAL_GPIO_ReadPin(Speed_EXTI5_GPIO_Port, Speed_EXTI5_Pin), uint32_PAS, HAL_GPIO_ReadPin(HALL_1_GPIO_Port, HALL_1_Pin), HAL_GPIO_ReadPin(HALL_2_GPIO_Port, HALL_2_Pin) , HAL_GPIO_ReadPin(HALL_3_GPIO_Port, HALL_3_Pin), MS.system_state);
+		  //sprintf_(buffer, "%d, %d, %d, %d, %d, %d, %d, %d, %d\r\n", adcData[6],MS.i_q_setpoint, MS.Speed, uint32_PAS, adcData[0], int32_temp_current_target , MS.i_q, uint16_idle_run_counter, MS.system_state);
 		  // sprintf_(buffer, "%d, %d, %d, %d, %d, %d, %d\r\n",(uint16_t)adcData[0],(uint16_t)adcData[1],(uint16_t)adcData[2],(uint16_t)adcData[3],(uint16_t)(adcData[4]),(uint16_t)(adcData[5]),(uint16_t)(adcData[6])) ;
 		  // sprintf_(buffer, "%d, %d, %d, %d, %d, %d\r\n",tic_array[0],tic_array[1],tic_array[2],tic_array[3],tic_array[4],tic_array[5]) ;
 		  i=0;

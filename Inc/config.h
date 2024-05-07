@@ -106,7 +106,7 @@
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_DEBUG
+#define DISPLAY_TYPE DISPLAY_TYPE_KINGMETER_901U//DISPLAY_TYPE_DEBUG
 
 
 //---------------------------------------------------------------------
@@ -117,6 +117,6 @@
 //#define ADC_BRAKE
 
 //---------------------------------------------------------------------
-#define AUTODETECT 1
+#define AUTODETECT 0
 
 #endif /* CONFIG_H_ */

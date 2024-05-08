@@ -86,7 +86,7 @@
 #define GEAR_RATIO 72 //4,83*30/2=72,45
 #define SPEEDLIMIT 25
 #define PULSES_PER_REVOLUTION 1
-#define SPEEDSOURCE EXTERNAL //INTERNAL
+#define SPEEDSOURCE 1 //INTERNAL
 #define SPEEDFILTER 1
 #define SPDSHFT 0
 
@@ -106,7 +106,7 @@
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_KINGMETER_618U//DISPLAY_TYPE_DEBUG
+#define DISPLAY_TYPE DISPLAY_TYPE_KINGMETER_901U//DISPLAY_TYPE_DEBUG
 
 
 //---------------------------------------------------------------------

@@ -93,7 +93,7 @@
 //---------------------------------------------------------------------
 //power settings
 #define PH_CURRENT_MAX 1200
-#define BATTERYCURRENT_MAX 5000 //1400 -> 3,2A
+#define BATTERYCURRENT_MAX 5000 //1400 -> 3,2A 5000 -> 10,2A
 #define REVERSE -1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1560 //33V = 1320; 39v = 1560
@@ -106,7 +106,7 @@
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_KINGMETER_901U//DISPLAY_TYPE_DEBUG
+#define DISPLAY_TYPE DISPLAY_TYPE_DEBUG//DISPLAY_TYPE_DEBUG - DISPLAY_TYPE_KINGMETER_901U
 
 
 //---------------------------------------------------------------------

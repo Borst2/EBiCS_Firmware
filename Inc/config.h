@@ -85,15 +85,15 @@
 #define WHEEL_CIRCUMFERENCE 2200
 #define GEAR_RATIO 72 //4,83*30/2=72,45
 #define SPEEDLIMIT 25
-#define PULSES_PER_REVOLUTION 1
-#define SPEEDSOURCE INTERNAL //INTERNAL
+#define PULSES_PER_REVOLUTION 6
+#define SPEEDSOURCE EXTERNAL //INTERNAL
 #define SPEEDFILTER 1
 #define SPDSHFT 0
 
 //---------------------------------------------------------------------
 //power settings
 #define PH_CURRENT_MAX 1200
-#define BATTERYCURRENT_MAX 1400
+#define BATTERYCURRENT_MAX 5000 //1400 -> 3,2A
 #define REVERSE -1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1560 //33V = 1320; 39v = 1560

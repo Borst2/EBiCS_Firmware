@@ -26,7 +26,7 @@
 #define _T 2028
 #define CAL_BAT_V 25
 #define CAL_V 15LL<<8
-#define CAL_I 76LL<<8   //38LL
+#define CAL_I 80LL<<8   //38LL  76 -> 5000->5,5A
 // BionX IGH3
 //#define INDUCTANCE 12LL
 //#define RESISTANCE 220LL

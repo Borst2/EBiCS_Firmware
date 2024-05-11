@@ -26,7 +26,7 @@
 #define _T 2028
 #define CAL_BAT_V 25
 #define CAL_V 15LL<<8
-#define CAL_I 38LL<<8
+#define CAL_I 76LL<<8   //38LL
 // BionX IGH3
 //#define INDUCTANCE 12LL
 //#define RESISTANCE 220LL
@@ -93,7 +93,7 @@
 //---------------------------------------------------------------------
 //power settings
 #define PH_CURRENT_MAX 1200
-#define BATTERYCURRENT_MAX 6000 //1400 -> 3,2A 5000 -> 10,2A 6000 --> 11,8
+#define BATTERYCURRENT_MAX 5000 //1400 -> 3,2A 5000 -> 10,2A 6000 --> 11,8
 #define REVERSE -1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1560 //33V = 1320; 39v = 1560

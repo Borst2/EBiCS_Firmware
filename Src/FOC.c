@@ -247,13 +247,13 @@ void FOC_calculation(int16_t int16_i_as, int16_t int16_i_bs, q31_t q31_teta, int
 				MS_FOC->system_state = Sensorless;
 			}
 		else {
-			MS_FOC->Speed=10000;
+			MS_FOC->Speed=10001;
 			MS_FOC->system_state=IdleRun;
 			//if(!int16_i_q_target&&MS_FOC->Obs_flag)CLEAR_BIT(TIM1->BDTR, TIM_BDTR_MOE);
 			if(MP_FOC->com_mode==Hallsensor_Sensorless)MS_FOC->Obs_flag=0;//reset for Hall sensor startup
 		}
 
-		if (q31_angle_old>(1<<25)&&MS_FOC->teta_obs<-(1<<25)&&q31_erps_counter>15){   //Find switch from +180° to -179,999° to detect one completed electric revolution.
+		if (q31_angle_old>(1<<25)&&MS_FOC->teta_obs<-(1<<25)&&q31_erps_counter>15){   //Find switch from +180Â° to -179,999Â° to detect one completed electric revolution.
 
 			q31_erps_filtered-=q31_erps_filtered>>4;
 			q31_erps_filtered+=q31_erps_counter;
@@ -547,7 +547,7 @@ if (e_alpha>=0 && e_beta<0){
      }
 
 }
-return ((angle_obs<<15)+1550960412); //angle in degree to q31 Look up table is scaled to 90° = 2^16 -1431655765
+return ((angle_obs<<15)+1550960412); //angle in degree to q31 Look up table is scaled to 90Â° = 2^16 -1431655765
 }
 
 int utils_truncate_number_abs(long long *number, q31_t max) {

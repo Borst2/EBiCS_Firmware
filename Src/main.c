@@ -502,7 +502,7 @@ if(MP.com_mode==Sensorless_openloop||MP.com_mode==Sensorless_startkick)MS.Obs_fl
 
 #if defined (ADC_BRAKE)
 
-  	while ((adcData[5]>THROTTLE_OFFSET)&&(adcData[1]>(THROTTLE_MAX-THROTTLE_OFFSET))){HAL_Delay(200);
+  	while ((adcData[5]>THROTTLE_OFFSET)&&(adcData[6]>(THROTTLE_MAX-THROTTLE_OFFSET))){HAL_Delay(200);
    	   	   			y++;
    	   	   			if(y==35) autodetect();
    	   	   			}
@@ -532,7 +532,7 @@ if(MP.com_mode==Sensorless_openloop||MP.com_mode==Sensorless_startkick)MS.Obs_fl
 #endif
 
 
-   	while(adcData[1]>THROTTLE_OFFSET)
+   	while(adcData[6]>THROTTLE_OFFSET)
 
    	  	{
    	  	//do nothing (For Safety at switching on)
